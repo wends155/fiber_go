@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+	<link rel="modulepreload" href="/_app/start-0d08edbf.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-f0095a1c.js">
+	<link rel="modulepreload" href="/_app/layout.svelte-5c516bbf.js">
+	<link rel="modulepreload" href="/_app/pages/index.svelte-d26c9272.js">
+			<script type="module">
+				import { start } from "/_app/start-0d08edbf.js";
+				start({
+					target: document.querySelector("#svelte"),
+					paths: {"base":"","assets":""},
+					session: {},
+					route: true,
+					spa: false,
+					trailing_slash: "never",
+					hydrate: {
+						status: 200,
+						error: null,
+						nodes: [
+							import("/_app/layout.svelte-5c516bbf.js"),
+						import("/_app/pages/index.svelte-d26c9272.js")
+						],
+						url: new URL("http://prerender/"),
+						params: {}
+					}
+				});
+			</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<h1>Site under construction</h1>
+<p>Temporary page.</p>
+
+</div>
+	</body>
+</html>

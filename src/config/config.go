@@ -10,7 +10,8 @@ func New() *fiber.App {
 	app := fiber.New()
 	app.Use(compress.New())
 
-	app.Get("/", routes.Main())
+	app.Static("/", "./frontend/build")
+
 	app.Get("/s", routes.Api)
 	return app
 }
